@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHONE — Réparation iPhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="orb orb--violet" aria-hidden="true"></div>
+  <div class="orb orb--cyan" aria-hidden="true"></div>
+  <div class="orb orb--small" aria-hidden="true"></div>
+
+  <nav class="nav stagger">
+    <div class="nav__logo">
+      <span class="nav__logo-dot"></span>
+      <span class="nav__logo-text">PHONE</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#horaires">Horaires</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta">Prendre RDV</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__phone" id="phone-canvas"></div>
+    <div class="hero__title"> MS PHONE</div>
+    <div class="hero__info">
+      <p class="hero__slogan">
+        Votre téléphone est endommagé,<br>
+        <span class="hero__slogan-highlight">Nous avons l'expertise nécessaire pour le réparer</span>
+      </p>
+    </div>
+    <div class="hero__actions stagger stagger--d3">
+      <a href="#horaires" class="shiny-btn" id="btn-horaires">
+        <span class="shiny-btn__inner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Voir les horaires
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item"><span class="ticker__label">Délai</span><span class="ticker__value ticker__value--accent">&lt; 1h</span></span>
+      <span class="ticker__item"><span class="ticker__label">Réparations</span><span class="ticker__value">12 400+</span></span>
+      <span class="ticker__item"><span class="ticker__label">Satisfaction</span><span class="ticker__value ticker__value--green">98 %</span></span>
+      <span class="ticker__item"><span class="ticker__label">Garantie</span><span class="ticker__value ticker__value--cyan">6 mois</span></span>
+      <span class="ticker__item"><span class="ticker__label">Modèles</span><span class="ticker__value">IPhone - Android</span></span>
+      <span class="ticker__item"><span class="ticker__label">Note</span><span class="ticker__value">4.7 ★</span></span>
+      <span class="ticker__item"><span class="ticker__label">Délai</span><span class="ticker__value ticker__value--accent">&lt; 1h</span></span>
+      <span class="ticker__item"><span class="ticker__label">Réparations</span><span class="ticker__value">12 400+</span></span>
+      <span class="ticker__item"><span class="ticker__label">Satisfaction</span><span class="ticker__value ticker__value--green">98 %</span></span>
+      <span class="ticker__item"><span class="ticker__label">Garantie</span><span class="ticker__value ticker__value--cyan">6 mois</span></span>
+      <span class="ticker__item"><span class="ticker__label">Modèles</span><span class="ticker__value">IPhone - Android</span></span>
+      <span class="ticker__item"><span class="ticker__label">Note</span><span class="ticker__value">4.7 ★</span></span>
+    </div>
+  </div>
+
+  <section class="features" id="services">
+    <div class="container">
+      <div class="features__grid">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="feature-card__title">Réparation Express</h3>
+          <p class="feature-card__desc">
+            Remplacement d'écran, batterie, connecteurs et vitre arrière en un temps record — sur place ou en dépôt.
+          </p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--cyan">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Diagnostic Offert</h3>
+          <p class="feature-card__desc">
+            Un diagnostic complet et sans engagement pour identifier précisément la panne avant toute réparation.
+          </p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--emerald">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+          </div>
+          <h3 class="feature-card__title">Garantie 6 Mois</h3>
+          <p class="feature-card__desc">
+            Toutes nos réparations sont garanties 6 mois. Pièces d'origine ou qualité premium.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="horaires" id="horaires">
+    <div class="container">
+      <h2 class="horaires__title reveal">Nos Horaires</h2>
+      <p class="horaires__sub reveal">Passez nous voir sans rendez-vous ou réservez votre créneau en ligne.</p>
+      <div class="horaires__grid reveal">
+        <div class="horaires__card">
+          <div class="horaires__day">Lundi</div>
+          <div class="horaires__time">09h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Mardi</div>
+          <div class="horaires__time">09h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Mercredi</div>
+          <div class="horaires__time">09h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Jeudi</div>
+          <div class="horaires__time">09h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Vendredi</div>
+          <div class="horaires__time">09h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Samedi</div>
+          <div class="horaires__time">9h30 – 20h00</div>
+        </div>
+        <div class="horaires__card">
+          <div class="horaires__day">Dimanche</div>
+          <div class="horaires__time">10h30 - 19h30</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">M.S PHONE</div>
+        <p class="footer__desc">
+          Spécialiste en réparation telephone et ordinateurs tous modèles. Rapidité, transparence et savoir-faire — votre téléphone est entre de bonnes mains.
+        </p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="#">Remplacement écran</a></li>
+          <li><a href="#">Changement batterie</a></li>
+          <li><a href="#">Vitre arrière</a></li>
+          <li><a href="#">Connecteurs & boutons</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Infos</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">Garantie</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contact</h4>
+        <ul class="footer__links">
+          <li><a href="#">01 42 57 65 68</a></li>
+          <li><a href="#">contact@msphone.fr</a></li>
+          <li><a href="#">21 BOULEVARD BARBES</a></li>
+          <li><a href="#">75018 PARIS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">&copy; 2026 M.S PHONE. Tous droits réservés.</span>
+      <span class="footer__status">
+        <span class="footer__status-dot"></span>
+        Ouvert aujourd'hui jusqu'à 20h00
+      </span>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
