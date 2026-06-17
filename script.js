@@ -60,7 +60,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
   function animate() {
     requestAnimationFrame(animate);
-    rotationAngle += 0.003;
+    rotationAngle += 0.008;
     if (phoneModel) {
       phoneModel.rotation.y = Math.sin(rotationAngle) * 0.3;
       phoneModel.position.y = -0.3 + Math.sin(rotationAngle * 1.5) * 0.04;
