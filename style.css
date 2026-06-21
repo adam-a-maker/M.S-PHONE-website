@@ -440,6 +440,118 @@ body {
   font-weight: 500;
 }
 
+.vitrine {
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+.vitrine__title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.vitrine__sub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #a1a1aa;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.vitrine__group {
+  margin-bottom: 40px;
+}
+.vitrine__group:last-child {
+  margin-bottom: 0;
+}
+.vitrine__group-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8b5cf6;
+  padding: 0 24px;
+  margin-bottom: 16px;
+}
+.vitrine__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.vitrine__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  padding: 0 24px 16px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139,92,246,0.3) transparent;
+}
+.vitrine__track::-webkit-scrollbar { height: 6px; }
+.vitrine__track::-webkit-scrollbar-track { background: transparent; }
+.vitrine__track::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.3); border-radius: 3px; }
+.vitrine__card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 24px;
+  transition: border-color 0.4s cubic-bezier(0.23,1,0.32,1), box-shadow 0.4s cubic-bezier(0.23,1,0.32,1);
+}
+.vitrine__card:hover {
+  border-color: rgba(139,92,246,0.3);
+  box-shadow: 0 0 30px -12px rgba(139,92,246,0.2);
+}
+.vitrine__card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 12px rgba(139,92,246,0.12));
+}
+.vitrine__card-model {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.vitrine__card-specs {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.vitrine__card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.vitrine__card-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+.vitrine__card-price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #8b5cf6;
+}
+
 .footer {
   position: relative;
   z-index: 1;
@@ -528,6 +640,10 @@ body {
   background: #10b981;
   animation: pulseDot 2s ease-in-out infinite;
 }
+.footer__status-dot--closed {
+  background: #ef4444;
+  animation: none;
+}
 @keyframes pulseDot {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(0.85); }
@@ -582,4 +698,6 @@ body {
   .ticker { height: 48px; }
   .feature-card { padding: 28px; }
   .horaires__card { padding: 16px; }
+  .vitrine__title { font-size: 2.2rem; }
+  .vitrine__card { flex: 0 0 240px; padding: 20px; }
 }
