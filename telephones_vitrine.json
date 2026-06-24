@@ -1,0 +1,38 @@
+[
+    {
+        "marque": "Apple",
+        "modele": "iPhone 15 Pro",
+        "specifications": "128 Go, Bleu Titane",
+        "prix": "760 €"
+    },
+    {
+        "marque": "Apple",
+        "modele": "iPhone 15 Pro",
+        "specifications": "128 Go, Titane Naturel",
+        "prix": "760 €"
+    },
+    {
+        "marque": "Apple",
+        "modele": "iPhone 14 Pro",
+        "specifications": "128 Go, Violet intense",
+        "prix": "650 €"
+    },
+    {
+        "marque": "Apple",
+        "modele": "iPhone 14 Pro",
+        "specifications": "256 Go, Violet intense",
+        "prix": "710 €"
+    },
+    {
+        "marque": "Apple",
+        "modele": "iPhone 14 Plus",
+        "specifications": "128 Go, Noir",
+        "prix": "510 €"
+    },
+    {
+        "marque": "Apple",
+        "modele": "iPhone 14",
+        "specifications": "128 Go, Noir",
+        "prix": "510 €"
+    }
+]
