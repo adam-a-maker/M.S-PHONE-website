@@ -665,6 +665,19 @@ body {
   transition: color 0.2s cubic-bezier(0.23,1,0.32,1);
 }
 .footer__links a:hover { color: #e4e4e7; }
+.footer__made {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #f97316, #ef4444, #f97316, #ef4444, #f97316);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradShift 3s ease-in-out infinite;
+  flex-shrink: 0;
+}
 .footer__bottom {
   max-width: 1200px;
   margin: 0 auto;
@@ -676,11 +689,16 @@ body {
   flex-wrap: wrap;
   gap: 12px;
 }
-.footer__copyright {
+.footer__github {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 0.95rem;
   font-weight: 300;
-  color: #52525b;
+  color: #8b5cf6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__github:hover {
+  color: #a78bfa;
 }
 .footer__status {
   display: flex;
@@ -761,4 +779,10 @@ body {
   .vitrine__title { font-size: 2.2rem; }
   .features__title { font-size: 2.2rem; }
   .vitrine__card { flex: 0 0 240px; padding: 20px; }
+}
+
+@keyframes gradShift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
 }
